@@ -39,6 +39,8 @@ Your goal is to steal as many membership tickets as you can, since your family a
 * 2 - User
 * 3 - Attacker (You)
 
+<div style="page-break-after: always;"></div>
+
 ## Tasks
 
 ### Task 1
