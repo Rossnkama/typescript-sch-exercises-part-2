@@ -1,4 +1,4 @@
-# sch-solutions-part-2
+# sch-exercises-part-2
 JohnnyTime's smart contract hacking course part 2 exercises.
 
 # Smart Contract Hacking Exercises Guidelines
