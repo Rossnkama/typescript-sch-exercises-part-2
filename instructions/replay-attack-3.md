@@ -1,4 +1,4 @@
-# Repaly Attack 3
+# Replay Attack 3
 
 ## Intro
 The Red Hawks Soccer Club is a passionate soccer team located in an old town.
@@ -16,7 +16,7 @@ This would allow them to create a limited number of VIP membership tickets and g
 The membership works by giving vouchers to selected members which they can use to mint NFTs,
 Each NFT equals one membership ticket.
 
-There are `180 membership tickets avaialble`.
+There are `180 membership tickets available`.
 
 You are a big fan of The Red Hawks, but membership tickets are too expensive and you can't afford them.
 
@@ -47,4 +47,4 @@ Your goal is to steal as many membership tickets as you can, since your family a
 Steal and claim all the available VIP tickets you can (178), by attacking the `RedHawksVIP.sol` contract.
 
 ### Task 2
-Protect the `RedHawksVIP.sol` smart contract so your attack won't succedd.
+Protect the `RedHawksVIP.sol` smart contract so your attack won't succeed.
