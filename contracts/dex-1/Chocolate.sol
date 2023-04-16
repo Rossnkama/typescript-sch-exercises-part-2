@@ -92,6 +92,8 @@ contract Chocolate is ERC20, Ownable {
             // TODO: Approve the router to spend the chocolate tokens
             
         } else if(_tokenIn == weth) {
+            // TODO: Make sure msg.value equals _amountIn
+
             // TODO: Convert ETH to WETH
             
             // TODO: Set the path array
