@@ -19,7 +19,7 @@ contract DAOToken is ERC20Snapshot, Ownable {
         _mint(_to, _amount);
     }
 
-    function snapshot() external returns (uint256 lastSnapshotId) {
+    function snapshot() external returns (uint256) {
         lastSnapshotId = _snapshot();
         return lastSnapshotId;
     }
