@@ -60,7 +60,7 @@ contract RainbowAllianceToken is ERC20, Ownable {
         require(!voted[_id][msg.sender], "already voted");
         Proposal storage proposal = getProposal[_id];
 
-        require(proposal.id <= lastProposalId, "proposal doesn't exist");
+        require(_id <= lastProposalId, "proposal doesn't exist");
 
         if(_decision) {
             proposal.yes += getVotingPower[msg.sender];

@@ -36,21 +36,21 @@ describe('DAO Attack Exercise 1', function () {
         /** TESTS - DON'T CHANGE ANYTHING HERE */
         
         // Can't create proposals, if there is no voting power
-        expect(this.rainbowAlliance.connect(user3).createProposal("Donate 1000$ to charities")).
+        await expect(this.rainbowAlliance.connect(user3).createProposal("Donate 1000$ to charities")).
         to.be.revertedWith("no voting rights");
 
         // Should be able to create proposals if you have voting power
-        expect(await this.rainbowAlliance.createProposal("Pay 100$ to george for a new Logo")).
+        await expect(await this.rainbowAlliance.createProposal("Pay 100$ to george for a new Logo")).
         to.not.be.reverted;
 
         // Can't vote twice
-        expect(this.rainbowAlliance.vote(1, true)).to.be.revertedWith("already voted");
+        await expect(this.rainbowAlliance.vote(1, true)).to.be.revertedWith("already voted");
         
         // Shouldn't be able to vote without voting rights
-        expect(this.rainbowAlliance.connect(user3).vote(1, true)).to.be.revertedWith("no voting rights");
+        await expect(this.rainbowAlliance.connect(user3).vote(1, true)).to.be.revertedWith("no voting rights");
 
         // Non existing proposal, reverts
-        expect(this.rainbowAlliance.vote(123, false)).to.be.revertedWith("proposal doesn't exist");
+        await expect(this.rainbowAlliance.vote(123, false)).to.be.revertedWith("proposal doesn't exist");
 
         // Users votes
         await this.rainbowAlliance.connect(user1).vote(1, true)
