@@ -28,7 +28,7 @@ JohnnyTime's smart contract hacking course part 2 exercises.
 ### Exercise Execution Example
 In case you are working on the exercise "oracle-manipulation-2":
 * Feel free to create contracts under `./contracts/oracle-manipulation-2/`
-* Feel free to change `./tests/oracle-manipulation-2/tests.js` file
+* Feel free to change `./tests/oracle-manipulation-2/tests.ts` file
 
 Execute from the root folder: `npm run oracle-manipulation-2` to check if you completed the exercise successfully.
 
@@ -42,5 +42,4 @@ npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
-npx hardhat run scripts/deploy.js
 ```
